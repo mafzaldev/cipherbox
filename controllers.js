@@ -5,6 +5,10 @@ const Password = require("./utils/Schema");
 let IS_LOGGED_IN = false;
 
 router.get("/", async (req, res, next) => {
+  res.send("<h1>Hello World<h1/>");
+});
+
+router.get("/login", async (req, res, next) => {
   const { username, password } = req.body;
 
   if (
