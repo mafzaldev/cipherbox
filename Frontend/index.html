@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password-container"></div>
+      <div class="state-change-container">
+        Want to store password?
+        <div class="checkbox-wrapper-3">
+          <input type="checkbox" id="cbx-3" />
+          <label for="cbx-3" class="toggle"><span></span></label>
+        </div>
+      </div>
+      <form class="form-container" id="query-form">
+        <div class="col-3">
+          <input
+            id="username"
+            class="effect"
+            type="text"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="col-3">
+          <input
+            id="password"
+            class="effect"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="col-3">
+          <input
+            id="app"
+            class="effect"
+            type="text"
+            placeholder="Application"
+            required
+          />
+        </div>
+        <div class="col-3 hidden" id="app-password-container">
+          <input
+            id="app-password"
+            class="effect"
+            type="text"
+            placeholder="Application Password"
+          />
+        </div>
+        <button type="submit" class="button" role="button">Get Password</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
