@@ -9,7 +9,7 @@ let applicationPassword = document.getElementById("app-password");
 
 const requestAPI = async () => {
   if (stateCheckbox.checked) {
-    const response = await fetch("http://localhost:5000/storePassword", {
+    const response = await fetch("https://cipherbox.vercel.app/storePassword", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const requestAPI = async () => {
     const data = await response.json();
     changeLog(response.status, data.log, data.data);
   } else {
-    const response = await fetch("http://localhost:5000/getPassword", {
+    const response = await fetch("https://cipherbox.vercel.app/getPassword", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
