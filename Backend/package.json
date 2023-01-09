@@ -1,7 +1,7 @@
 {
   "name": "password_manager",
   "version": "1.0.0",
-  "description": "A password manager app for storing passwords in a secure way (PERSONAL USE ONLY)",
+  "description": "CipherBox is a password manager to store your passwords in a secure manner. (PERSONAL USE ONLY)",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
